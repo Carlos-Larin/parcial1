@@ -136,11 +136,6 @@ section {
 }
 
 /* Estilos para el footer */
-footer {
-    background-color: #343a40;
-    color: rgb(94, 176, 159);
-    padding: 20px;
-}
 
 .footer-content {
     display: flex;
@@ -157,9 +152,6 @@ footer {
     padding: 0;
 }
 
-.footer-bottom {
-    text-align: center;
-}
 
 /* Estilos para los elementos personalizados */
 product-card, offer-card, blog-post {

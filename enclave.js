@@ -61,8 +61,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const descripcion = document.getElementById('descripcion').value;
         const imagenUrl = document.getElementById('imagen-url').value;
 
-        // Aquí puedes agregar código para enviar estos datos a un servidor
-        // Por ahora, solo mostraremos un mensaje de confirmación
         alert(`Gracias por tu sugerencia de ${nombreLugar} en ${ubicacion}. La revisaremos pronto!`);
         form.reset();
     });
