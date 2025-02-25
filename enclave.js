@@ -12,7 +12,7 @@ class ProductCard extends HTMLElement {
             <style>
                 .card {
                     border-radius: 5px;
-                    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                    box-shadow: 0 4px 6px rgba(28, 19, 19, 0.8);
                     padding: 15px;
                     background-color: white;
                     transition: transform 0.3s ease, box-shadow 0.3s ease;

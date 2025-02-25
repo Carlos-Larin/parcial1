@@ -7,12 +7,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #d82020;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Asegura que el body ocupe al menos toda la altura de la ventana */
+    min-height: 100vh; 
 }
-
 
 main {
     flex: 1;
@@ -39,10 +38,10 @@ main {
 .footer {
     text-align: center;
     padding: 10px;
-    background-color: #f1f1f1;
+    background-color: #cc1212;
     width: 100%;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: auto; /* Esto empujará el footer hacia abajo */
+    margin-top: auto;
 }
 
 .container {
@@ -54,7 +53,7 @@ main {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 h1, h2 {
-    color: #fff;
+    color: #140202;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 ul {
@@ -112,7 +111,7 @@ nav ul li {
 
 main {
     padding: 20px;
-    margin-bottom: 60px; /* Ajusta este valor según la altura de tu footer */
+    margin-bottom: 60px;
 }
 
 
@@ -120,7 +119,6 @@ section {
     margin-bottom: 40px;
 }
 
-/* Estilos para la sección de productos */
 .productos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -128,14 +126,12 @@ section {
 }
 
 
-/* Estilos para la sección del blog */
 .blog-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
-/* Estilos para el footer */
 
 .footer-content {
     display: flex;
@@ -152,8 +148,6 @@ section {
     padding: 0;
 }
 
-
-/* Estilos para los elementos personalizados */
 product-card, offer-card, blog-post {
     display: block;
     border: 1px solid #ddd;
@@ -162,7 +156,6 @@ product-card, offer-card, blog-post {
     background-color: white;
 }
 
-/* Estilos para el modal del carrito */
 .modal {
     display: none;
     position: fixed;
