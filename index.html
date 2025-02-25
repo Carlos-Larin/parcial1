@@ -32,19 +32,19 @@
                         lugar="Usulutan"
                         image="https://elsalvador.travel/system/wp-content/uploads/2021/04/Berlin6E9A4842.jpg"
                         description="Un lugar muy bonito llamado Berlin."></product-card>
-    
+
                     <product-card
                         name="El cuco"
                         lugar="San Miguel"
                         image="https://lh3.googleusercontent.com/-koTHotH96Cg/VUjvd4gq78I/AAAAAAAAIug/GqUG5r0keU0/s500/playa-el-cuco.jpg"
                         description="Una Bonita Playa."></product-card>
-    
+
                     <product-card
                         name="El Pital"
                         lugar="Chalatenango"
                         image="https://elsalvador.travel/system/wp-content/uploads/2022/12/DestinationPital.jpg"
                         description="Un lugar muy Bonito."></product-card>
-    
+
                     <product-card
                         name="volcan chaparrastique"
                         lugar="San Miguel"
@@ -52,7 +52,32 @@
                         description="Un volcan muy bonito que se puede visitar."></product-card>
                 </div>
             </section>
+
+            <section id="sugerencias">
+                <h2>Sugerir un Nuevo Lugar</h2>
+                <form id="sugerencia-form">
+                    <div class="form-group">
+                        <label for="nombre-lugar">Nombre del Lugar:</label>
+                        <input type="text" id="nombre-lugar" name="nombre-lugar" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ubicacion">Ubicación:</label>
+                        <input type="text" id="ubicacion" name="ubicacion" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcion">Descripción:</label>
+                        <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="imagen-url">URL de la Imagen:</label>
+                        <input type="url" id="imagen-url" name="imagen-url" required>
+                    </div>
+                    <button type="submit">Enviar Sugerencia</button>
+                </form>
+            </section>
         </main>
+
+        <h2>el formulario nose guarda :D</h2>
     <footer class="footer">
         <p>Nombre del Estudiante 1 - Carlos Larin &#128039;</p>
         <p>Nombre del Estudiante 2 - Josué Villegas &#128039;</p>
