@@ -13,15 +13,166 @@
         <div class="header-info">
             <h2>Carrera Ing. en Sistemas y Redes Informáticas</h2>
             <p>Código del estudiante 1: SMSS032223</p>
-            <p>Código del estudiante 2: </p>
+            <p>Código del estudiante 2: SMSS04923</p>
         </div>
     </header>
 
+    <body>
+        <header>
+            <div class="logo">
+                <img src="https://ejemplo.com/logo.png" alt="Logo de la tienda">
+                <h1>Mi Tienda Online</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#ofertas">Ofertas</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="carrito">
+                <button id="ver-carrito">Carrito (<span id="carrito-count">0</span>)</button>
+            </div>
+        </header>
     
+        <main>
+            <section id="inicio">
+                <h2>Bienvenido a Mi Tienda Online</h2>
+                <p>Descubre nuestra gran selección de productos de alta calidad. ¡Compra ahora y disfruta de nuestras ofertas exclusivas!</p>
+                <img src="https://ejemplo.com/banner.jpg" alt="Banner promocional">
+            </section>
+    
+            <section id="productos">
+                <h2>Nuestros Productos Destacados</h2>
+                <div class="productos-grid">
+                    <product-card
+                        name="Camiseta Algodón Premium"
+                        price="29.99"
+                        image="https://ejemplo.com/camiseta-premium.jpg"
+                        description="Camiseta de algodón orgánico suave y cómoda."></product-card>
+    
+                    <product-card
+                        name="Pantalón Jeans Clásico"
+                        price="59.99"
+                        image="https://ejemplo.com/pantalones-clasicos.jpg"
+                        description="Pantalón jeans de corte clásico y duradero."></product-card>
+    
+                    <product-card
+                        name="Zapatillas Deportivas Pro"
+                        price="99.99"
+                        image="https://ejemplo.com/zapatillas-pro.jpg"
+                        description="Zapatillas deportivas de alto rendimiento para correr."></product-card>
+    
+                    <product-card
+                        name="Chaqueta Impermeable Invierno"
+                        price="79.99"
+                        image="https://ejemplo.com/chaqueta-invierno.jpg"
+                        description="Chaqueta impermeable ideal para el invierno."></product-card>
+                </div>
+            </section>
+    
+            <section id="ofertas">
+                <h2>Ofertas Especiales</h2>
+                <div class="ofertas-grid">
+                    <offer-card
+                        title="Descuento del 20% en Camisetas"
+                        description="Aprovecha nuestro descuento del 20% en todas las camisetas. ¡Oferta por tiempo limitado!"
+                        image="https://ejemplo.com/camiseta-oferta.jpg"></offer-card>
+    
+                    <offer-card
+                        title="Envío Gratis en Compras Mayores a 50€"
+                        description="Disfruta del envío gratis en todas las compras mayores a 50€. ¡No te lo pierdas!"
+                        image="https://ejemplo.com/envio-gratis.jpg"></offer-card>
+                </div>
+            </section>
+    
+            <section id="blog">
+                <h2>Nuestro Blog</h2>
+                <div class="blog-grid">
+                    <blog-post
+                        title="Cómo elegir la ropa adecuada para el verano"
+                        date="15 de junio de 2025"
+                        image="https://ejemplo.com/blog-verano.jpg"
+                        excerpt="Consejos para elegir la ropa perfecta para mantenerte fresco y cómodo durante el verano."></blog-post>
+    
+                    <blog-post
+                        title="Tendencias de moda para el otoño 2025"
+                        date="1 de septiembre de 2025"
+                        image="https://ejemplo.com/blog-otono.jpg"
+                        excerpt="Descubre las últimas tendencias de moda para la temporada de otoño 2025."></blog-post>
+                </div>
+            </section>
+    
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <form id="contact-form">
+                    <label for="name">Nombre:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+    
+                    <label for="email">Correo Electrónico:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+    
+                    <label for="message">Mensaje:</label><br>
+                    <textarea id="message" name="message" required></textarea><br><br>
+    
+                    <button type="submit">Enviar</button>
+                </form>
+    
+                <p id="form-output"></p>
+            </section>
+        </main>
+    
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Información</h3>
+                    <ul>
+                        <li><a href="#">Acerca de nosotros</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Atención al cliente</h3>
+                    <ul>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">Envíos y devoluciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="social-links">
+                        <a href="#"><img src="https://ejemplo.com/facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="https://ejemplo.com/twitter.png" alt="Twitter"></a>
+                        <a href="#"><img src="https://ejemplo.com/instagram.png" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mi Tienda Online. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    
+        <div id="modal-carrito" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Carrito de Compras</h2>
+                <div id="carrito-items">
+                    <!-- Los productos agregados al carrito aparecerán aquí -->
+                </div>
+                <p>Total: <span id="carrito-total">0</span> €</p>
+                <button id="comprar-button">Comprar</button>
+            </div>
+        </div>
+    
+        <script src="java3.js"></script>
  
     <footer class="footer">
         <p>Nombre del Estudiante 1 - Carlos Larin &#128039;</p>
-        <p>Nombre del Estudiante 2 - Josue Villegas &#128039;</p>
+        <p>Nombre del Estudiante 2 - Josué Villegas &#128039;</p>
         <p>Examen Parcial-Primer computo</p>
     </footer>
        
