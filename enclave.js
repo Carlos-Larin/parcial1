@@ -1,10 +1,10 @@
-// Custom Element para las tarjetas de producto
+// Custom Element para las tarjetas de producto (lugares)
 class ProductCard extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({ mode: 'open' });
-        const name = this.getAttribute('name');
-        const price = this.getAttribute('price');
+        const nombre = this.getAttribute('name');
+        const lugar = this.getAttribute('lugar');
         const image = this.getAttribute('image');
         const description = this.getAttribute('description');
 
@@ -22,36 +22,14 @@ class ProductCard extends HTMLElement {
                     border-radius: 5px;
                     margin-bottom: 10px;
                 }
-                button {
-                    background-color: #007BFF;
-                    color: white;
-                    border: none;
-                    padding: 8px 12px;
-                    border-radius: 5px;
-                    cursor: pointer;
-                }
-                button:hover {
-                    background-color: #0056b3;
-                }
             </style>
             <div class="card">
-                <h3>${name}</h3>
-                <img src="${image}" alt="${name}">
+                <h3>${nombre}</h3>
+                <img src="${image}" alt="${nombre}">
                 <p>${description}</p>
-                <p>Precio: ${price} €</p>
-                <button>Añadir al carrito</button>
+                <p>Lugar: ${lugar}</p>
             </div>
         `;
-
-        this.shadowRoot.querySelector('button').addEventListener('click', () => {
-            this.dispatchEvent(new CustomEvent('add-to-cart', {
-                detail: {
-                    name: name,
-                    price: price,
-                    image: image
-                }
-            }));
-        });
     }
 }
 customElements.define('product-card', ProductCard);
@@ -125,6 +103,7 @@ class BlogPost extends HTMLElement {
     }
 }
 customElements.define('blog-post', BlogPost);
+
 
 // Carrito de compras
 const carritoItems = document.getElementById('carrito-items');
