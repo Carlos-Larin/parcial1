@@ -4,9 +4,15 @@ html, body {
 }
 
 body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
     display: flex;
     flex-direction: column;
+    min-height: 100vh; /* Asegura que el body ocupe al menos toda la altura de la ventana */
 }
+
 
 main {
     flex: 1;
@@ -33,12 +39,12 @@ main {
 .footer {
     text-align: center;
     padding: 10px;
-    background-color: #f1f1f1; /* Color de fondo del footer */
-    position: fixed;
-    bottom: 0;
+    background-color: #f1f1f1;
     width: 100%;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: auto; /* Esto empujará el footer hacia abajo */
 }
+
 .container {
     background-color: rgb(205, 224, 34);
     padding: 20px;
@@ -106,7 +112,9 @@ nav ul li {
 
 main {
     padding: 20px;
+    margin-bottom: 60px; /* Ajusta este valor según la altura de tu footer */
 }
+
 
 section {
     margin-bottom: 40px;
@@ -130,7 +138,7 @@ section {
 /* Estilos para el footer */
 footer {
     background-color: #343a40;
-    color: white;
+    color: rgb(94, 176, 159);
     padding: 20px;
 }
 
